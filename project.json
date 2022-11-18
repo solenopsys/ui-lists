@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/fui/grid/src",
+  "prefix": "hyperconverged",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/fui/grid"],
+      "options": {
+        "jestConfig": "libs/fui/grid/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/fui/grid/src/**/*.ts",
+          "libs/fui/grid/src/**/*.html"
+        ]
+      },
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": []
+}

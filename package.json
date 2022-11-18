@@ -1,0 +1,14 @@
+{
+  "name": "@solenopsys/uimatrix-lists",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular-resize-event": "^3.2.0"
+  },
+  "devDependencies": {
+    "ngx-infinite-scroll": "^13.1.0"
+  },
+  "scripts": {
+    "test": "node index.js",
+    "build": "tsc -p tsconfig.lib.json"
+  }
+}

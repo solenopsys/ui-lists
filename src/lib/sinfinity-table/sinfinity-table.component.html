@@ -1,0 +1,52 @@
+<div style="width: 100%" (resized)="onResized($event)">
+</div>
+<div style=" height: 100vh;" *ngIf="conf$|async; let conf"     >
+  <div class="table-header">
+    <div class="cell header-cell"
+         *ngFor="let field of conf.dataConf.fields" style="font-weight: normal;"
+         [ngStyle]="{width:conf.columnsWidths[field.key]+'px'}">
+      <img *ngIf="ICONS[field.type]"
+           src="{{ICONS[field.type] | baseDir}}"
+           style="height: 16px;padding-right: 5px;filter: var(--invertIcons);">
+      {{field.title}}
+    </div>
+    <div class="cell header-cell" style="width: 100px">
+      Control
+    </div>
+    <div class="header-cell" style="width: 10px;">
+    </div>
+  </div>
+  <div #test class="table-body" style="height: 90%">
+    <div infinite-scroll
+         [infiniteScrollContainer]="test"
+         [infiniteScrollDistance]="2"
+         [infiniteScrollUpDistance]="1.5"
+         [infiniteScrollThrottle]="50"
+         (scrolled)="onScrollDown()"
+         (scrolledUp)="onScrollUp()">
+      <div class="table-row" *ngFor="let row of conf.rows"
+           [ngStyle]="{height:row.height+'px',top:row.x+'px',visibility: row.hidden? 'hidden':'visible'}">
+        <div class="cell" *ngFor="let field of conf.dataConf.fields"
+             [ngStyle]="{width:conf.columnsWidths[field.key]+'px'}">
+          <ng-container *ngIf="!field.link">
+            <span
+              [ngStyle]="{color:(field.type===BOOL && row[field.key]==='true')?'green':'none' }">{{row[field.key]}}</span>
+          </ng-container>
+          <ng-container *ngIf="field.link">
+            <ng-container
+              *ngFor="let item of row[field.key]">{{item[field.link.titleField]}} </ng-container>
+          </ng-container>
+        </div>
+        <div class="cell" style="width: 100px">
+          <fui-icon-button *ngFor="let command of conf.commands"
+                           [icon]="command.icon" [title]="command.title"
+                           (click)="commandEvent(command.type,row['uid'],conf.module,conf.tableKey)">
+          </fui-icon-button>
+          <input *ngIf="conf.dataConf.massCommand" type="checkbox" [ngModel]="row['checkedRow']"
+                 (ngModelChange)="checkEvent($event,row)">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
