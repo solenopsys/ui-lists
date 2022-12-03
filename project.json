@@ -1,4 +1,5 @@
 {
+  "name": "lists",
   "projectType": "library",
   "sourceRoot": "libs/fui/grid/src",
   "prefix": "hyperconverged",
