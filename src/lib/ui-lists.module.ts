@@ -18,7 +18,7 @@ const components = [InfinityTableComponent];
     InfinityTableComponent
   ]
 })
-export class UiListsModule {
+export class UIListsModule {
   constructor(private ds: DeclaredService) {
     ds.addComps("@solenopsys/uimatrix-lists", components)
   }
