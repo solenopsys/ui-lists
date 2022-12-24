@@ -38,10 +38,10 @@
           </ng-container>
         </div>
         <div class="cell" style="width: 100px">
-          <fui-icon-button *ngFor="let command of conf.commands"
+          <ui-icon-button *ngFor="let command of conf.commands"
                            [icon]="command.icon" [title]="command.title"
                            (click)="commandEvent(command.type,row['uid'],conf.module,conf.tableKey)">
-          </fui-icon-button>
+          </ui-icon-button>
           <input *ngIf="conf.dataConf.massCommand" type="checkbox" [ngModel]="row['checkedRow']"
                  (ngModelChange)="checkEvent($event,row)">
         </div>

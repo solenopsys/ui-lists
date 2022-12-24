@@ -1,20 +1,20 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {SInfinityTableComponent} from './sinfinity-table.component';
+import {InfinityTableComponent} from './infinity-table.component';
 
 describe('SInfinityTableComponent', () => {
-  let component: SInfinityTableComponent;
-  let fixture: ComponentFixture<SInfinityTableComponent>;
+  let component: InfinityTableComponent;
+  let fixture: ComponentFixture<InfinityTableComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SInfinityTableComponent ]
+      declarations: [ InfinityTableComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SInfinityTableComponent);
+    fixture = TestBed.createComponent(InfinityTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
