@@ -1,4 +1,4 @@
-import {FieldType} from "@solenopsys/uimatrix-utils";
+import {FieldType} from "@solenopsys/ui-utils";
 export const ICONS_TYPES: any = {};
 
 ICONS_TYPES[FieldType.DATE] =

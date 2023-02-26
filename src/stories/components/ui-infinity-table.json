@@ -1,7 +1,7 @@
 {
   "name": "InfinityTable ",
   "description": "Infinity table for any data",
-  "package": "@solenopsys/uimatrix-lists",
+  "package": "@solenopsys/ui-lists",
   "component": "InfinityTableComponent",
   "io": {
 

@@ -2,7 +2,7 @@ import { Action, createSelector, State, StateContext, Store } from "@ngxs/store"
 import { Injectable, Injector, ProviderToken } from "@angular/core";
 import { firstValueFrom } from "rxjs";
 import { append, patch, removeItem } from "@ngxs/store/operators";
-import { DataItemInterface, DataListInterface, DataPageConfig } from "@solenopsys/uimatrix-utils";
+import { DataItemInterface, DataListInterface, DataPageConfig } from "@solenopsys/ui-utils";
 import { COMMANDS_MAP } from "./commands";
 
 
