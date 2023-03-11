@@ -5,7 +5,6 @@
     "@le2xx/angular-resize-event": "15.0.0",
     "ngx-infinite-scroll": "^15.0.0"
   },
-
   "scripts": {
     "test": "node index.js",
     "build": "tsc -p tsconfig.lib.json"
