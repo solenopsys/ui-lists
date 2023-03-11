@@ -2,7 +2,7 @@ import {Component, Input} from '@angular/core';
 import {Observable} from "rxjs";
 import {Store} from "@ngxs/store";
 import { ChangeTableWidth, Check, Command,  LoadNextBatch, RowsGroup, RowsState } from "../rows.store";
-import { ResizedEvent } from "angular-resize-event";
+import { ResizedEvent } from "@le2xx/angular-resize-event";
 import { FieldType } from "@solenopsys/ui-utils";
 import {ICONS_TYPES} from "../icons-mapping";
 

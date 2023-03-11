@@ -2,7 +2,10 @@
   "name": "ui-lists",
   "projectType": "library",
   "sourceRoot": "packages/uimatrix/ui-lists/src",
+
+  "root": "packages/uimatrix/ui-lists",
   "prefix": "ui",
+
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

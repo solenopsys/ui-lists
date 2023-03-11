@@ -2,11 +2,10 @@
   "name": "@solenopsys/ui-lists",
   "version": "0.0.1",
   "dependencies": {
-    "angular-resize-event": "^3.2.0"
+    "@le2xx/angular-resize-event": "15.0.0",
+    "ngx-infinite-scroll": "^15.0.0"
   },
-  "devDependencies": {
-    "ngx-infinite-scroll": "^14.0.1"
-  },
+
   "scripts": {
     "test": "node index.js",
     "build": "tsc -p tsconfig.lib.json"

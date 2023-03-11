@@ -5,7 +5,7 @@ import {UIIconsModule} from "@solenopsys/ui-icons";
 import {FormsModule} from "@angular/forms";
 import {DeclaredService, UtilsModule} from "@solenopsys/ui-utils";
 import {InfiniteScrollModule} from "ngx-infinite-scroll";
-import {AngularResizeEventModule} from "angular-resize-event";
+import {AngularResizeEventModule} from "@le2xx/angular-resize-event";
 import {CommonModule} from "@angular/common";
 import {UIControlsModule} from "@solenopsys/ui-controls";
 
