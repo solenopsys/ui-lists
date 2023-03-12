@@ -10,7 +10,7 @@ import {ICONS_TYPES} from "../icons-mapping";
 @Component({
   selector: 'ui-infinity-table',
   templateUrl: './infinity-table.component.html',
-  styleUrls: ['./infinity-table.component.css']
+  styleUrls: ['./infinity-table.component.scss']
 })
 export class InfinityTableComponent {
   key!: string;
