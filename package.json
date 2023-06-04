@@ -1,12 +1,14 @@
 {
   "name": "@solenopsys/ui-lists",
-  "version": "0.0.1",
-  "dependencies": {
-    "@le2xx/angular-resize-event": "15.0.0",
-    "ngx-infinite-scroll": "^15.0.0"
-  },
+  "version": "0.1.0",
   "scripts": {
-    "test": "node index.js",
-    "build": "etsc -p tsconfig.lib.json"
+    "build": "ng-packagr -p ng-package.json -c ../../../../tsconfig.base.json"
+  },
+  "peerDependencies": {
+    "@le2xx/angular-resize-event": "15.0.0",
+    "@solenopsys/ui-controls": "0.1.0",
+    "@solenopsys/ui-icons": "0.1.0",
+    "@solenopsys/ui-utils": "0.1.0",
+    "ngx-infinite-scroll": "^16.0.0"
   }
 }
